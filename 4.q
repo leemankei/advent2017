@@ -10,10 +10,6 @@ For example:
 
 The system's full passphrase list is available as your puzzle input. How many passphrases are valid?
 
-phases: read0 `:/tmp/2017d4.txt
-wordCnt:group each " " vs/:phases
-sum all each 1 = value each count each/: wordCnt
-
 
 --- Part Two ---
 
@@ -28,3 +24,9 @@ For example:
     oiii ioii iioi iiio is not valid - any of these words can be rearranged to form any other word.
 
 Under this new system policy, how many passphrases are valid?
+
+phases: read0 `:/tmp/2017d4.txt
+sum all each 1 = value each count each/: group each " " vs/:phases  // p1
+sum all each 1 = value each count each/: group each asc each/:" " vs/:phases    // p2
+
+
