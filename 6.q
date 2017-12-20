@@ -40,3 +40,5 @@ Out of curiosity, the debugger would also like to know the size of the loop: sta
 In the example above, 2 4 1 2 is seen again after four cycles, and so the answer in that example would be 4.
 
 How many cycles are in the infinite loop that arises from the configuration in your puzzle input?
+
+neg (-) . where .debug.steps ~\: last .debug.steps
